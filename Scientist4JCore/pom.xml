@@ -10,11 +10,18 @@
     <artifactId>Scientist4JCore</artifactId>
 
     <dependencies>
+
         <dependency>
             <groupId>com.codahale.metrics</groupId>
             <artifactId>metrics-core</artifactId>
             <version>3.0.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>19.0</version>
+        </dependency>
+
 
         <dependency>
             <groupId>junit</groupId>
@@ -28,6 +35,7 @@
             <version>3.0.0</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
 </project>

@@ -1,12 +1,7 @@
 package com.github.rawls238.scientist4j;
 
-import com.codahale.metrics.Metric;
-import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
+import com.google.common.base.Optional;
 
 public class Observation<T> {
 
@@ -18,9 +13,9 @@ public class Observation<T> {
     private long duration;
 
     public Observation(String name, Timer timer) {
-      this.name = name;
-      this.timer = timer;
-      this.exception = Optional.empty();
+        this.name = name;
+        this.timer = timer;
+        this.exception = Optional.absent();
     }
 
     public String getName() {
